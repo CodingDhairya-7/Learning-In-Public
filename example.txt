@@ -1,0 +1,2 @@
+C++ File I/O Example
+Writing to a file is simple!
