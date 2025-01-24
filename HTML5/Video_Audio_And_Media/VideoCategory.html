@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Video Categories</title>
+    <style>
+        /* Container for the videos */
+        .video-container {
+            display:flex;
+            flex-wrap: wrap;
+            /* Allow wrapping of videos for smaller screens */
+            gap: 20px;
+            /* Space between the videos */
+        }
+
+        .video-container .video {
+            flex: 1 1 48%;
+            /* Adjust video width to fit two in a row */
+            box-sizing: border-box;
+            /* Ensure padding doesn't increase the width */
+        }
+
+        iframe {
+            width: 100%;
+            height: 315px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <!-- First video -->
+        <div class="video">
+            <h3>Real Cricket 24 with RahulRKGamer YouTube Channel</h3>
+            <iframe src="https://www.youtube.com/embed/Aemu0H_w6jI?si=qNFnC_IywXG8sUfj&amp;start=63"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        <!-- Second video -->
+        <div class="video">
+            <h3>WWE 2k24 with Fail Game Youtube Channel</h3>
+            <iframe src="https://www.youtube.com/embed/U7kIBXwHiQs?si=ngPSUnLZSEZqq3xg&amp;start=60"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+        <!-- Third video -->
+        <div class="video">
+            <h3>Cricket News with Akash Chopra</h3>
+            <iframe src="https://www.youtube.com/embed/391R4815QZA?si=EHDSgGs_V8HEeg_c" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="video">
+            <h3>Barcelona vs Real Madrid 2025 Highlights</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WxNCZfu64Oo?si=tHfWUoDcv4L874hg"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</body>
+
+</html>

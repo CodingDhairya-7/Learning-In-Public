@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Introduction Form</h1>
+    <form action="post">
+        <div>
+            <label for="username">Enter your Username :- </label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" autofocus required>
+        </div>
+        <div>
+            <label>Select your Gender :- </label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label>Hobbies :- </label>
+            <input type="checkbox" id="reading" name="reading" value="yes">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="swimming" name="swimming" value="yes">
+            <label for="swimming">Swimming</label>
+            <input type="checkbox" id="music" name="music" value="yes">
+            <label for="music">Music</label>
+        </div>
+        <div>
+            <label for="address">Address :- </label>
+            <textarea id="address" name="address" rows="4" cols="50" placeholder="Enter your Address" required></textarea>
+        </div>
+        <div>
+            <label for="fruits">Any Favourite Fruit :- </label>
+            <select name="fruits" required>  
+                <option value="apple">Apple</option>
+                <option value="banana">Banana</option>
+                <option value="cherry">Cherry</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
