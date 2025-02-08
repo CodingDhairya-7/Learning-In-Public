@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        .box:first-child{
+            background-color: red;
+        }
+
+        .box::first-line{
+            color: aqua;
+        }
+
+        .box::first-letter{
+            color: brown;
+        }
+
+        [data-color="primary"]{
+            margin-top: 45px;
+        }
+
+        .box:nth-child(odd){
+            background-color:blueviolet;
+        }
+
+        .box:nth-last-child(2){
+            background-color: chocolate;
+        }
+
+        .boxes::before{
+            content: "Everyone is awesome !!";
+            color: blue;
+        }
+
+        .boxes::after{
+            content: "CodingDhairya-7 is also awesome !!";
+            color:crimson;
+        }
+
+        ::selection{
+            color: aqua;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">Hello, I am a div tag</div>
+        <div class="box">Good Morning, I am another div tag. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex sapiente excepturi repellendus repudiandae necessitatibus. Corrupti eius recusandae ipsa nostrum placeat sed earum aut iure magni, excepturi cupiditate consectetur enim repellendus labore beatae nulla debitis hic harum itaque accusamus ducimus inventore dicta aperiam. Rerum illum, enim labore numquam voluptatem nesciunt porro veniam molestias maxime quos possimus? Assumenda nobis tenetur cumque facilis, recusandae sapiente distinctio dolorum fugit consectetur provident nemo aliquam. Repudiandae quae distinctio hic ipsa adipisci praesentium, aliquid tenetur inventore similique, voluptas voluptatibus magni fugiat, tempora et nobis quasi! Porro, aliquid? Quis earum voluptate nulla in officia veritatis labore, blanditiis aut eveniet expedita doloremque nam dolores sequi consequuntur voluptates repellat, quaerat quos modi dignissimos deleniti asperiores quidem reprehenderit! Iure excepturi, cupiditate sapiente ipsam, eligendi dolor animi reiciendis amet veniam cumque voluptatibus natus suscipit, totam repudiandae earum facere. Totam doloribus obcaecati temporibus aliquid? Quod, harum alias aliquam libero dolore rerum aperiam molestiae eos? Eos ullam sunt necessitatibus reiciendis animi reprehenderit? Culpa laborum quidem ut repudiandae, reprehenderit ab. Adipisci iste ullam, libero modi excepturi illum aliquid nisi dignissimos earum non suscipit, odit minima accusantium amet, error ea voluptatum numquam laboriosam consectetur! Delectus!</div>
+        <div data-color="primary" class="box">Nice to meet you, I am another div tag.</div>
+    </div>
+</body>
+</html>

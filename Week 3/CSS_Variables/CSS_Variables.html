@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+
+        :root{
+            --color: green;
+            --seccolor: lightpink;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav{
+            background-color: var(--color);
+        }
+
+        .container{
+            background-color: var(--seccolor);
+        }
+
+        ul li{
+            list-style: none;
+            padding: 25px;
+            border: 2px solid var(--seccolor);
+        }
+
+        ul{
+            display: flex;
+        }
+
+        li:first-child{
+            --color: purple;
+            background-color: var(--color);
+            /*Below line means that find the color variable in the whole program, if not found change the background color to blue, to see this line working you have to comment the color variable wherever the color variable is declaread from all the places in your program*/
+            /* background-color: var(--color, blue);  */
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim vel dolore nam tenetur commodi alias qui? Eligendi reprehenderit repellendus maxime minus aspernatur animi unde provident, quaerat aperiam debitis iusto veritatis iure, quod ducimus ratione voluptatem labore. Inventore atque odio quos itaque deleniti cumque rerum consequatur.
+    </div>
+</body>
+</html>

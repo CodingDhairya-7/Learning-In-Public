@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        img{
+            float: right;
+        }
+
+        .card{
+            border: 2px solid red;
+        }
+
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
+        }
+
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="https://c8.alamy.com/comp/RGCMGN/old-man-sitting-by-the-river-RGCMGN.jpg" alt="" width="255px">
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, dolore error. Reiciendis odio nostrum temporibus ut veritatis labore ab nam cupiditate magni optio, harum reprehenderit iste nihil deserunt earum enim! Quis totam, accusantium esse fuga quia veniam officiis, sint ducimus distinctio inventore voluptas. Nesciunt ratione fugit quidem beatae voluptatum atque dicta et, suscipit veritatis rerum perferendis ex consequuntur. Explicabo dolores esse inventore voluptates nulla tempora fugiat eius quos eos id molestiae magni, fugit necessitatibus exercitationem aut debitis atque velit excepturi? Perferendis voluptatem eos voluptate fugit deserunt! Id, quasi quo.</div>
+        <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi pariatur suscipit, quia nam eos nobis odio culpa. Reprehenderit nesciunt, ducimus ex ipsa est et ea illo odio tempore culpa ipsum debitis tempora quod. Animi accusamus velit vel delectus voluptas sint laboriosam magnam aspernatur similique laudantium? Rem exercitationem eius nesciunt accusamus, facilis doloremque quaerat libero cumque eligendi a ducimus natus, voluptatibus deleniti commodi recusandae dolores praesentium? Ullam nulla, ipsa corrupti ipsum mollitia ratione accusantium eveniet optio commodi molestiae exercitationem consequuntur inventore explicabo rerum neque sunt fugiat placeat in, qui amet dolor? Sapiente quasi labore maxime voluptatum, sunt consectetur ipsam reiciendis sit eligendi pariatur enim fuga facilis veritatis exercitationem expedita hic aperiam porro vero ea aut iste nostrum. Ex voluptates eius quae illo exercitationem sint veritatis dolorem est nulla vero recusandae earum aut placeat iste, incidunt ad reiciendis assumenda voluptas delectus harum explicabo doloremque maxime fugit quidem.</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>
