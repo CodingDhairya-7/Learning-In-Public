@@ -1,0 +1,13 @@
+{
+  "name": "working_with_files_fs_and_path_modules",
+  "version": "1.0.0",
+  "main": "Working_with_Files_fs_and_path_Modules.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
